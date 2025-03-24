@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../../../core/auth/service/auth.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -9,11 +9,15 @@ import { CommonModule } from '@angular/common';
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.css'
 })
-export class SideBarComponent {
+export class SideBarComponent implements OnInit{
 
   userRole: string | null = '';
   
   constructor(private authService: AuthService){
+   
+  }
+  
+  ngOnInit(): void {
     this.authService.getRole().subscribe((res) => this.userRole = res );
   }
 

@@ -1,8 +1,6 @@
 <div class="employee-management-container">
     
     <h2>Manage Employee</h2>
-  
-    <!-- Search Bar & Filters -->
     <div class="toolbar">
       <input type="text" placeholder="Search Employee..." (input)="onSearchInputEvent($event)"  >
       <div class="toolbar-buttons">
@@ -10,6 +8,6 @@
       </div>
       
     </div>
-        <app-employee-list [employee]="employee"></app-employee-list>
+        <app-employee-list [employee]="filteredEmployee"></app-employee-list>
   </div>
   

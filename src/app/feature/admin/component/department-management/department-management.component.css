@@ -1,0 +1,79 @@
+.department-management-container {
+  font-family: "Arial", sans-serif;
+  margin-right: 30px;
+}
+.department-management {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+/* Toolbar */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.toolbar-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+/* Buttons */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.btn.primary {
+  background: #28a1c5;
+  color: white;
+}
+
+.btn.edit {
+  background: #28a1c5;
+  color: white;
+}
+
+.btn.delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-weight: bold;
+  font-size: 16px;
+}

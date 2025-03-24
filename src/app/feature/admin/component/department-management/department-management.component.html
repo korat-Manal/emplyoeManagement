@@ -1,1 +1,11 @@
-<p>department-management works!</p>
+<div class="department-management-container">
+    <h2>Manage Department</h2>
+    <div class="toolbar">
+      <input type="text" placeholder="Search Employee..." (input)="onSearchInputEvent($event)"  >
+      <div class="toolbar-buttons">
+        <button class="btn primary" (click)="openAddDepartmentDialog()"> Add New Task</button>
+      </div>
+      
+    </div>
+        <app-department-list [department]="filteredDepartment"></app-department-list>
+  </div>

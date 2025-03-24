@@ -37,7 +37,6 @@ export class EmployeeListComponent {
     dialogRef.afterClosed().subscribe( res => {
       if(res){
         this.employeeService.updateEmployee(res).subscribe(res =>{
-
         });
       }
       
@@ -47,13 +46,12 @@ export class EmployeeListComponent {
   onEmployeeDeleteModal(id: string){
     const dialogRef = this.dialog.open(DeleteEmployeeComponent  , {
       width: '350px',
-      data: { message : 'Are you sure you want to delete this Task ?'}
+      data: { message : 'Are you sure you want to delete this Employee?'}
     });
 
     dialogRef.afterClosed().subscribe(res => {
       if(res){
         this.employeeService.deleteEmployee(id).subscribe(() => {
-
         });
       }
     });

@@ -9,7 +9,7 @@
     {
       "id": "70984cd4-5c22-440e-9bbb-1789291e8ad8",
       "name": "kholi",
-      "department": "IT",
+      "department": "HR",
       "role": "Employee"
     },
     {
@@ -17,6 +17,40 @@
       "name": "jacks",
       "department": "IT",
       "role": "Employee"
+    },
+    {
+      "id": "cf1e9456-fbe0-496d-9188-5d7e3d623d66",
+      "name": "rohit",
+      "department": "IT",
+      "role": "Employee"
+    },
+    {
+      "id": "8da4cd86-f07f-401c-b4e1-c3b45f0f968a",
+      "name": "bhumrah",
+      "department": "IT",
+      "role": "Employee"
+    },
+    {
+      "id": "d7e68ac5-9aad-49c2-9aa7-5cefd557c603",
+      "name": "rana",
+      "department": "IT",
+      "role": "Employee"
+    },
+    {
+      "id": "313b7a8a-ba62-4b11-9040-38fe08867171",
+      "name": "nik",
+      "department": "IT",
+      "role": "Employee"
+    }
+  ],
+  "department":[
+    {
+      "id" : "1",
+      "department":"IT"
+    },
+    {
+      "id" : "2",
+      "department":"HR"
     }
   ]
 }

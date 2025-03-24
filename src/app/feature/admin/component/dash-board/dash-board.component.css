@@ -1,0 +1,78 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  padding-right: 30px;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+
+/* Stats Cards */
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  margin-top: 10px;
+}
+.card {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: 5px solid #28a1c5;
+}
+
+/* Sections */
+.section {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Task & Notification Lists */
+.task-list {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-title {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.task-status {
+  font-size: 14px;
+  color: #28a1c5;
+  font-weight: bold;
+}
+
+/* Quick Actions */
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+table {
+  background-color: white;
+}
