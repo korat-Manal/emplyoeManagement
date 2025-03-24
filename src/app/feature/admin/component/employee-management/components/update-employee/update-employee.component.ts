@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { MatNativeDateModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -15,7 +14,6 @@ import { MatSelectModule } from '@angular/material/select';
     ReactiveFormsModule, 
     MatDialogModule, 
     MatFormFieldModule,
-    MatNativeDateModule, 
     MatInputModule,
     MatButtonModule,
     MatSelectModule, 
@@ -53,7 +51,7 @@ export class UpdateEmployeeComponent {
       const updateEmployee: Employee = { ...this.data, ...this.updateEmployeeForm.value };
       this.employeeService.updateEmployee(updateEmployee).subscribe({
         next: ()=>{
-          this.toastr.success('Task Updated Successfuly', 'Success')
+          this.toastr.success('Updated Successfuly', 'Success')
           setTimeout(() =>{
             this.onCancel()
           }, 1000);

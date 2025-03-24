@@ -43,7 +43,7 @@ export class AddEmployeeComponent {
     if(this.addEmployeeForm.valid){
       this.employeeService.addEmployee(newEmployee).subscribe({
         next: (res) =>{
-          this.toastr.success('Task added Successfuly','Success')
+          this.toastr.success('added Successfuly','Success')
           setTimeout(() =>{
             this.onCancel();
           }, 1000);

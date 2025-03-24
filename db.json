@@ -25,14 +25,8 @@
       "role": "Employee"
     },
     {
-      "id": "8da4cd86-f07f-401c-b4e1-c3b45f0f968a",
-      "name": "bhumrah",
-      "department": "IT",
-      "role": "Employee"
-    },
-    {
       "id": "d7e68ac5-9aad-49c2-9aa7-5cefd557c603",
-      "name": "rana",
+      "name": "ranaa",
       "department": "IT",
       "role": "Employee"
     },
@@ -41,16 +35,22 @@
       "name": "nik",
       "department": "IT",
       "role": "Employee"
-    }
-  ],
-  "department":[
-    {
-      "id" : "1",
-      "department":"IT"
     },
     {
-      "id" : "2",
-      "department":"HR"
+      "id": "0132dec4-d825-4707-bd5a-3995fe17b695",
+      "name": "sahil",
+      "department": "IT",
+      "role": "Employee"
+    }
+  ],
+  "department": [
+    {
+      "id": "1",
+      "department": "AI"
+    },
+    {
+      "id": "2",
+      "department": "HR"
     }
   ]
 }

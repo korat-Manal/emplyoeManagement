@@ -19,7 +19,7 @@ export class DeleteEmployeeComponent {
   onConfirm(){
     setTimeout(() => {
       this.dailogRef.close(true);
-      this.toastr.success('Task Updated Successfuly', 'Success')
+      this.toastr.success('Deleted Successfuly', 'Success')
     },500)
    
   }

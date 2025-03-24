@@ -1,1 +1,17 @@
-<p>update-department works!</p>
+<mat-dialog-content>
+    <form [formGroup]="updateDepartmentForm">
+        
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="department" required />
+      </mat-form-field>
+
+    </form>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="updateDepartmentForm.invalid">
+      Update  Department
+    </button>
+  </mat-dialog-actions>
