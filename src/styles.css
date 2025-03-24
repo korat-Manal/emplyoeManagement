@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'ngx-toastr/toastr';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #f4f7f9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-danger {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  color: #d9534f;
+}
+
+.empty {
+  margin: 50px 0 50px 0;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(0, 0, 0, 0.4);
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.custom-dialog .mat-dialog-container {
+  background-color: white !important;
+  border-radius: 12px !important;
+  padding: 20px !important;
+}

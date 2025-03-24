@@ -1,0 +1,50 @@
+<div class="login-container">
+    <mat-card class="login-card">
+      <mat-card-header>
+        <mat-card-title class="title">Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form [formGroup]="loginForm">
+
+          <label class="input-label">Email:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="pat@example.com" formControlName="email" required />
+          </mat-form-field>
+          @if (loginForm.get('email')?.touched && loginForm.get('email')?.invalid) {
+            <div class="text-danger">
+              @if (loginForm.get('email')?.errors?.['required']) {
+                *Email is required
+              }
+              @if (loginForm.get('email')?.errors?.['email']) {
+                *Invalid email format
+              }
+            </div>
+        }
+  
+   
+          <label class="input-label">Password:</label>
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" />
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility($event)">
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+          </mat-form-field>
+          @if (loginForm.get('password')?.touched && loginForm.get('password')?.invalid) {
+            <div class="text-danger">
+              @if (loginForm.get('password')?.errors?.['required']) {
+                *Password is required
+              }
+              @if (loginForm.get('password')?.errors?.['minlength']) {
+                *Password must be at least 6 characters
+              }
+            </div>
+          }
+
+          <button mat-raised-button color="primary" class="full-width" (click)="onLogin()">Login</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  

@@ -1,0 +1,32 @@
+<mat-dialog-content>
+    <form [formGroup]="addEmployeeForm">
+        
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" required />
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Department</mat-label>
+        <input matInput formControlName="department" required />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role" required>
+          <mat-option value="Super Admin">Super Admin</mat-option>
+          <mat-option value="Admin">Admin</mat-option>
+          <mat-option value="Department Manager">Department Manager</mat-option>
+          <mat-option value="Employee">Employee</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+    </form>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="addEmployeeForm.invalid">
+      Add Employee
+    </button>
+  </mat-dialog-actions>

@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "id": "329607dd-554c-44f2-bb73-097736b709a0",
+      "name": "vraj",
+      "department": "HR",
+      "role": "Employee"
+    },
+    {
+      "id": "70984cd4-5c22-440e-9bbb-1789291e8ad8",
+      "name": "kholi",
+      "department": "IT",
+      "role": "Employee"
+    },
+    {
+      "id": "f65fe98c-5c31-4484-afe5-018572878263",
+      "name": "jacks",
+      "department": "IT",
+      "role": "Employee"
+    }
+  ]
+}

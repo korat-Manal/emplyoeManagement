@@ -1,0 +1,40 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-card {
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+mat-form-field.full-width {
+  width: 100%;
+}
+
+.field-width{
+    width: 100%;
+}
+
+.input-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+    color: #555;
+}
+
+button.full-width {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.title{
+    font-weight: 500;
+    margin-bottom: 15px;
+}

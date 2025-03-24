@@ -1,0 +1,15 @@
+<div class="employee-management-container">
+    
+    <h2>Manage Employee</h2>
+  
+    <!-- Search Bar & Filters -->
+    <div class="toolbar">
+      <input type="text" placeholder="Search Employee..." (input)="onSearchInputEvent($event)"  >
+      <div class="toolbar-buttons">
+        <button class="btn primary" (click)="openAddEmployeeDialog()"> Add New Task</button>
+      </div>
+      
+    </div>
+        <app-employee-list [employee]="employee"></app-employee-list>
+  </div>
+  
