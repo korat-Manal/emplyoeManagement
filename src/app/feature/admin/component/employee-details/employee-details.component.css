@@ -1,0 +1,40 @@
+.employee-details-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .employee-card {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 10px;
+  }
+  
+  .employee-info {
+    margin: 20px 0;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .info-row mat-icon {
+    margin-right: 10px;
+    color: #28a1c5;
+  }
+  
+  button {
+    margin-right: 10px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  mat-card-actions button {
+    width: 48%;
+  }
+  

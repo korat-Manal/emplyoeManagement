@@ -38,10 +38,14 @@ export class EmployeeService {
     return this.employee$;
   }
 
+  getEmployeeById(id: string): Observable<Employee> {
+    return this.http.get<Employee>(`${this.apiUrl}/${id}`);
+  }
+  
   addEmployee(employee: Omit<Employee, 'id'>): Observable<Employee>{
     const newEmployee: Employee = { id: uuidv4(), ...employee };
     return this.http.post<Employee>(this.apiUrl, newEmployee).pipe(
-      tap(() => this.fetchEmployees().subscribe()) 
+        tap(() => this.fetchEmployees().subscribe()) 
     )
   }
 

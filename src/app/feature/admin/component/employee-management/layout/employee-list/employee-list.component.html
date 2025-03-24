@@ -3,7 +3,8 @@
 
     <ng-container matColumnDef="name">
       <th mat-header-cell *matHeaderCellDef> Name </th>
-      <td mat-cell *matCellDef="let employee"> {{ employee.name}} </td>
+      <td mat-cell *matCellDef="let employee">
+        <a [routerLink]="['/admin/employee', employee.id]" (click)="logEmployeeId(employee.id)"> {{ employee.name }} </a> </td>
     </ng-container>
   
     <ng-container matColumnDef="department">

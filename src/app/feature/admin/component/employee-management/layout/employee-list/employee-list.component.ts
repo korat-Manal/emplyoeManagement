@@ -10,10 +10,11 @@ import { UpdateEmployeeComponent } from '../../components/update-employee/update
 import { EmployeeService } from '../../../../../../shared/services/employee-services/employee.service';
 import { DeleteEmployeeComponent } from '../../components/delete-employee/delete-employee.component';
 import { AuthService } from '../../../../../../core/auth/service/auth.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-employee-list',
-  imports: [CommonModule, MatTableModule, MatIconModule, NgxPaginationModule],
+  imports: [CommonModule, MatTableModule, MatIconModule, NgxPaginationModule, RouterModule],
   templateUrl: './employee-list.component.html',
   styleUrl: './employee-list.component.css'
 })
@@ -41,6 +42,9 @@ export class EmployeeListComponent {
       }
       
     })
+  }
+  logEmployeeId(id: string){
+    console.log('Navigating to employee with ID:', id);
   }
   
   onEmployeeDeleteModal(id: string){
